@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050b1b" />
+    <title>I Love You</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas class="stars" id="stars" aria-hidden="true"></canvas>
+    <canvas class="love-animation" id="love-animation" aria-hidden="true"></canvas>
+    <main class="scene" id="scene">
+      <header class="heading" aria-live="polite">
+        <p class="eyebrow">buat wawa sayanggkuu</p>
+        <h1 aria-label="I LOVE YOU">
+          <span class="love-letter">I</span>
+          <span class="love-letter word-gap">L</span>
+          <span class="love-letter">O</span>
+          <span class="love-letter">V</span>
+          <span class="love-letter">E</span>
+          <span class="love-letter word-gap">Y</span>
+          <span class="love-letter">O</span>
+          <span class="love-letter">U</span>
+        </h1>
+        <p>Tekan saklar untuk menyalakan cahaya.</p>
+      </header>
+
+      <section class="installation" aria-label="Lampu yang terhubung ke saklar">
+        <svg class="wire-art" viewBox="0 0 900 420" preserveAspectRatio="none" aria-hidden="true">
+          <path class="wire-shadow" d="M190 230 H610 V290 H710" />
+          <path class="wire" d="M190 230 H610 V290 H710" />
+        </svg>
+
+        <div class="lamp-unit" aria-label="Bohlam">
+          <span class="lamp-halo" aria-hidden="true"></span>
+          <div class="bulb-glass" aria-hidden="true"><span class="bulb-filament"></span></div>
+          <span class="bulb-base" aria-hidden="true"></span>
+          <p class="lamp-caption">cahaya hatimu</p>
+        </div>
+
+        <span class="heart" aria-hidden="true">♥</span>
+
+        <div class="switch-unit">
+          <p class="switch-title">SAKLAR CAHAYA</p>
+          <button class="switch-button" id="light-switch" type="button" role="switch" aria-checked="false" aria-label="Nyalakan lampu">
+            <span class="switch-track" aria-hidden="true">
+              <span class="switch-mark">OFF</span>
+              <span class="switch-mark">ON</span>
+              <span class="switch-knob"></span>
+            </span>
+          </button>
+          <span class="switch-state" id="switch-state">OFF</span>
+        </div>
+      </section>
+
+      <p class="status" id="status" aria-live="polite">Lampu sedang mati.</p>
+    </main>
+    <script src="script.js" defer></script>
+  </body>
+</html>
